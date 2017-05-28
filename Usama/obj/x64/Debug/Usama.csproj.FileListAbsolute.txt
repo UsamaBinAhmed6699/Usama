@@ -1,0 +1,5 @@
+D:\ADFENIX\Usama\Usama\bin\Debug\Usama.exe
+D:\ADFENIX\Usama\Usama\bin\Debug\Usama.pdb
+D:\ADFENIX\Usama\Usama\obj\x64\Debug\Usama.csprojResolveAssemblyReference.cache
+D:\ADFENIX\Usama\Usama\obj\x64\Debug\Usama.exe
+D:\ADFENIX\Usama\Usama\obj\x64\Debug\Usama.pdb

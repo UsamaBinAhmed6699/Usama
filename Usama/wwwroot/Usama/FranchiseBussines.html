@@ -1,0 +1,112 @@
+﻿<link rel="import" href="/sys/polymer/polymer.html">
+
+<template>
+    <template is="dom-bind">
+        
+        <h6 >
+            <a href="/Usama/HomePage"> Back to start</a>
+        </h6>
+        <br />
+        <h4 >Setting :{{model.franchise.Name$}}</h4>
+        <br />
+        <h5>Edit Franchise Settings</h5>
+        <br />
+        <label style="margin:10px"> Name</label>
+        <input value="{{model.franchise.Name$::input}}"/>
+        <br />
+        <label style="margin:10px"> Street</label>
+        <input value="{{model.franchise.Street$::input}}" />
+        <br />
+        <label style="margin:10px"> Number</label>
+        <input value="{{model.franchise.Number$::input}}" />
+        <br />
+        <label style="margin:10px"> ZipCode</label>
+        <input value="{{model.franchise.ZipCode$::input}}" />
+        <br />
+        <label style="margin:10px"> City</label>
+        <input value="{{model.franchise.City$::input}}" />
+        <br />
+        <label style="margin:10px"> Country</label>
+        <input value="{{model.franchise.Country$::input}}" />
+        <br />
+        <label style="margin-left:5px">Address,</label>
+        <label > {{model.franchise.Name$}}</label>
+        <label >{{model.franchise.Street$}} </label>
+        <label >{{model.franchise.Number$}}</label>
+        <label >{{model.franchise.ZipCode$}} </label>
+        <label > {{model.franchise.City$}}</label>
+        <label>{{model.franchise.Country$}} </label>
+        <br/>
+        <button style="font-size:large"  value="{{model.Save$::click}}" onmousedown="++this.value">Save</button>
+        <hr />
+        <label style="font-weight:700">Register New Home For Sale</label>
+        <br />
+        <label style="font-weight:500">Home Info</label>
+        <br />
+        <label>Street</label>
+        <input value="{{model.Accounts.Street$::input}}" />
+        <br />
+
+        <label>Number</label>
+        <input value="{{model.Accounts.Number$::input}}" />
+        <br />
+
+        <label>Zip Code</label>
+        <input value="{{model.Accounts.ZipCode$::input}}" />
+        <br />
+
+        <label>City</label>
+        <input value="{{model.Accounts.City$::input}}" />
+        <br />
+
+        <label>Country</label>
+        <input value="{{model.Accounts.Country$::input}}" />
+        <br />
+
+        <label>Address</label>
+      
+        <label > {{model.Accounts.Street$}},</label>
+        <label >{{model.Accounts.Number$}}, </label>
+        <label >{{model.Accounts.ZipCode$}}, </label>
+        <label > {{model.Accounts.City$}} ,</label>
+        <label >{{model.Accounts.Country$}} , </label>
+        
+        <br />
+        <label style="font-weight:700">Transaction Info</label>
+        <br/>
+        <label>Date (format -"2016-01-04")</label>
+        <input value="{{model.Accounts.Date$::input}}" />
+        <br />
+        <label>Sale Price</label>
+        <input value="{{model.Accounts.Salesprice$::input}}" />
+        <br />
+        <label>Commission</label>
+        <input value="{{model.Accounts.Commission$::input}}" />
+        <br />
+        <br />
+        <button style="font-size:large" value="{{model.Registor$::click}}" onmousedown="++this.value">Registor</button>
+        <h5>List of Transactions</h5>
+        <br />
+        <div class="grid" style="width:1500px">
+
+            <div style="width:300px; float :left">
+                <label style="font-weight:700">Date</label>
+            </div>
+            <div style="width:300px ; float :left">
+                <label style="font-weight:700">Sale Price</label>
+            </div>
+
+            <div style="width:300px ; float :left">
+                <label style="font-weight:700"> Commission</label>
+            </div>
+            <div style="width:300px ; float :left">
+                <label style="font-weight:700">Address</label>
+            </div>
+            
+        </div>
+        <template is="dom-repeat" items="{{model.AccountsList}}">
+            <starcounter-include partial="{{item}}"></starcounter-include>
+        </template>
+       
+    </template>
+</template>

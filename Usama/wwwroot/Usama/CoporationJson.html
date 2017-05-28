@@ -1,0 +1,53 @@
+﻿<link rel="import" href="/sys/polymer/polymer.html">
+
+<template>
+    
+        <template is="dom-bind">
+
+            <h5 style="font-weight:700"> {{model.Name}}</h5>
+            <h5 style="font-weight:700">
+                Franchise Offices
+            </h5>
+
+
+            <fieldset>
+                <label>
+                    Name:
+                </label>
+                <input value="{{model.franchiseNametoAdd$::input}}" />
+            </fieldset>
+            <button value="{{model.Save$::click}}" onmousedown="++this.value">Create New</button>
+            <br />
+            <h7 style="font-weight:700">Sort On</h7>
+            <br/>
+            <button style="margin :10px" value="{{model.noOfHomes$::click}}" onmousedown="++this.value">Number of Homes</button>
+            <button style="margin :10px" value="{{model.totalCommission$::click}}" onmousedown="++this.value">Total Commission</button>
+            <button style="margin :10px" value="{{model.averageCommission$::click}}" onmousedown="++this.value">Average Commission</button>
+            <button style="margin :10px" value="{{model.Trend$::click}}" onmousedown="++this.value">Trend</button>
+            <div class="grid" style="width:1500px">
+
+                <div style="width:300px; float :left">
+                    <label style="font-weight:700">Name</label>
+                </div>
+                <div style="width:300px ; float :left">
+                    <label style="font-weight:700">No of Homes Sold</label>
+                </div>
+
+                <div style="width:300px ; float :left">
+                    <label style="font-weight:700">Total Commission</label>
+                </div>
+                <div style="width:300px ; float :left">
+                    <label style="font-weight:700">Averag Commisssion</label>
+                </div>
+                <div style="width:300px ; float :left">
+                    <label style="font-weight:700">Trend</label>
+                </div>
+            </div>
+
+            <template is="dom-repeat" items="{{model.franchise}}">
+                <starcounter-include partial="{{item}}"></starcounter-include>
+            </template>
+
+        </template>
+    
+</template>

@@ -1,0 +1,30 @@
+{
+  "Html": "/Usama/FranchiseBussines.html",
+
+  "franchise": {
+    "Name$": "",
+    "Street$": "",
+    "Number$": "",
+    "ZipCode$": "",
+    "City$": "",
+    "Country$": ""
+
+  },
+  "Save$": 0,
+
+  "Accounts": {
+    "Street$": "",
+    "Number$": "",
+    "ZipCode$": "",
+    "City$": "",
+    "Country$": "",
+    "Date$": "",
+    "Salesprice$": 0,
+    "Commission$": 0
+
+  },
+  "Registor$": 0,
+  "AccountsList": [ {} ],
+  "Address": ""
+
+}

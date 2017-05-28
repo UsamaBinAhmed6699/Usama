@@ -1,0 +1,20 @@
+﻿<link rel="import" href="/sys/polymer/polymer.html">
+
+<template>
+    <template is="dom-bind">
+      
+        <div class="grid" style="width:1500px">
+
+           <div style="width:300px; float :left"   > <a href="/Usama/FranchiseBussines/{{model.Id}} ">{{model.Name}}</a></div>
+            <div style="width:300px ; float :left">
+                <label >{{model.noOfHomes}}</label></div>
+
+            <div style="width:300px ; float :left">
+                <label >{{model.totalCommission}}</label></div>
+                <div style="width:300px ; float :left">
+                    <label >{{model.averageCommission}}</label></div>
+                    <div style="width:300px ; float :left">
+                        <label >{{model.trend}}</label></div>
+                    </div>
+    </template>
+</template>
